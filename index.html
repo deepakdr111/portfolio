@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEEPAK R | Java Full Stack Developer</title>
+  <meta name="description" content="Portfolio of DEEPAK R - Java Full Stack Developer specializing in Core Java, Spring Boot, React.js, MySQL, and responsive web applications.">
+  <meta name="keywords" content="Deepak R, Java Full Stack Developer, Spring Boot, React.js, Java Developer Portfolio, SQL, Web Development">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="DEEPAK R | Java Full Stack Developer">
+  <meta property="og:description" content="Fresher Java Full Stack Developer skilled in Java, Spring Boot, React.js, SQL, REST APIs, and modern responsive web development.">
+  <meta property="og:type" content="website">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-tokens.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Interactive 3D Canvas Background -->
+  <canvas id="canvas-bg"></canvas>
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Deepak R Portfolio Home">
+        <div class="logo-symbol">
+          <span class="logo-initials">DR</span>
+        </div>
+        <div class="logo-text">
+          <span class="brand-name">DEEPAK R</span>
+          <span class="brand-sub">JAVA FULL STACK DEV</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu-wrapper" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Actions -->
+      <div class="nav-actions">
+        <a href="https://drive.google.com/file/d/1VFfLu_czBDgsThjzSip6ZgcriCsE-2JC/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-outline-cyan btn-sm">
+          <i data-lucide="download" style="width:14px; height:14px;"></i> Download Resume
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay"></div>
+  <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div>
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
+        <div class="nav-logo">
+          <div class="logo-symbol">
+            <span class="logo-initials">DR</span>
+          </div>
+          <div class="logo-text">
+            <span class="brand-name">DEEPAK R</span>
+            <span class="brand-sub">PORTFOLIO</span>
+          </div>
+        </div>
+        <button class="mobile-drawer-close" aria-label="Close navigation menu" style="background: rgba(255,255,255,0.08); border: 1px solid var(--border-glass); border-radius: var(--radius-sm); padding: 0.4rem; color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <ul class="mobile-menu-links">
+        <li><a href="#hero" class="mobile-nav-link">Home <i data-lucide="chevron-right"></i></a></li>
+        <li><a href="#about" class="mobile-nav-link">About <i data-lucide="chevron-right"></i></a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills <i data-lucide="chevron-right"></i></a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience <i data-lucide="chevron-right"></i></a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects <i data-lucide="chevron-right"></i></a></li>
+        <li><a href="#education" class="mobile-nav-link">Education <i data-lucide="chevron-right"></i></a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact <i data-lucide="chevron-right"></i></a></li>
+      </ul>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a href="https://drive.google.com/file/d/1VFfLu_czBDgsThjzSip6ZgcriCsE-2JC/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; justify-content: center;">
+        <i data-lucide="download"></i> Download Resume
+      </a>
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       1. HERO SECTION
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      
+      <!-- Left Content -->
+      <div class="hero-content reveal-on-scroll">
+        <div class="hero-badge-group">
+          <span class="badge badge-cyan">
+            <span class="pulse-dot"></span> Java Full Stack Developer
+          </span>
+          <span class="badge badge-violet">
+            <i data-lucide="graduation-cap" style="width: 14px; height: 14px;"></i> B.E. CSE 2025
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          DEEPAK R <span class="hero-subtitle text-gradient">JAVA FULL STACK DEVELOPER</span>
+        </h1>
+
+        <p class="hero-subheadline">
+          Fresher Java Full Stack Developer with a strong foundation in Java, SQL, and front-end technologies. Skilled in HTML, CSS, JavaScript, React, and building responsive web applications.
+        </p>
+
+        <!-- Key Info Bar -->
+        <div class="hero-key-info-bar">
+          <div class="info-item">
+            <div class="info-icon"><i data-lucide="map-pin"></i></div>
+            <div>
+              <div class="info-text-label">Location</div>
+              <div class="info-text-val">Tamil Nadu, India</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i data-lucide="award"></i></div>
+            <div>
+              <div class="info-text-label">Degree</div>
+              <div class="info-text-val">B.E. CSE • 7.5 CGPA</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i data-lucide="layers"></i></div>
+            <div>
+              <div class="info-text-label">Core Stack</div>
+              <div class="info-text-val">Java • Spring Boot • React</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary btn-lg">
+            <span>View Projects</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="https://drive.google.com/file/d/1VFfLu_czBDgsThjzSip6ZgcriCsE-2JC/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+            <span>Download Resume</span>
+            <i data-lucide="download"></i>
+          </a>
+          <a href="https://github.com/deepakdr111" target="_blank" rel="noopener" class="btn btn-outline-cyan btn-lg" style="padding: 0.8rem 1.1rem; display: flex; align-items: center; gap: 0.4rem;" title="GitHub Profile">
+            <i data-lucide="github"></i>
+            <span style="font-size: 0.88rem;">GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/indeepak-dr11" target="_blank" rel="noopener" class="btn btn-outline-cyan btn-lg" style="padding: 0.8rem 1.1rem; display: flex; align-items: center; gap: 0.4rem;" title="LinkedIn Profile">
+            <i data-lucide="linkedin"></i>
+            <span style="font-size: 0.88rem;">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right 3D Pop-Out Profile Picture Showcase Card -->
+      <div class="hero-profile-wrapper reveal-on-scroll">
+        <div class="profile-card-stage">
+          <div class="profile-img-container">
+            <img src="assets/images/profile_user.png" alt="DEEPAK R - Java Full Stack Developer" class="hero-profile-img" onerror="this.src='assets/images/profile.png'">
+          </div>
+          <div class="profile-card-badge">
+            <span class="profile-badge-name">DEEPAK R</span>
+            <span class="profile-badge-role">Java Full Stack Developer</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       2. ABOUT ME SECTION
+       ========================================================================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid reveal-on-scroll">
+        <div>
+          <span class="section-tag"><i data-lucide="user"></i> Personal Profile</span>
+          <h2 class="section-title">Clean Code & <span class="text-gradient">Problem Solving</span></h2>
+          <p style="color: #cbd5e1; line-height: 1.75; margin-bottom: 1.5rem; font-size: 1.05rem;">
+            Fresher Java Full Stack Developer with a strong foundation in Java, SQL, and front-end technologies. Skilled in HTML, CSS, JavaScript, React, and building responsive web applications. Passionate about clean code, problem solving, and continuous learning.
+          </p>
+
+          <div class="about-features-list">
+            <div class="about-feat-item">
+              <div class="about-feat-icon"><i data-lucide="check"></i></div>
+              <div>
+                <strong style="color: #ffffff; font-size: 1rem;">Core Java & Spring Boot</strong>
+                <p style="font-size: 0.88rem; color: #94a3b8;">REST APIs, JWT authentication, CRUD operations, and JDBC connectivity.</p>
+              </div>
+            </div>
+
+            <div class="about-feat-item">
+              <div class="about-feat-icon"><i data-lucide="check"></i></div>
+              <div>
+                <strong style="color: #ffffff; font-size: 1rem;">Responsive Frontend UI</strong>
+                <p style="font-size: 0.88rem; color: #94a3b8;">Building modern web interfaces with HTML, CSS, JavaScript, React, and Bootstrap.</p>
+              </div>
+            </div>
+
+            <div class="about-feat-item">
+              <div class="about-feat-icon"><i data-lucide="check"></i></div>
+              <div>
+                <strong style="color: #ffffff; font-size: 1rem;">SQL & Version Control</strong>
+                <p style="font-size: 0.88rem; color: #94a3b8;">MySQL relational database management and Git / GitHub collaboration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card" style="border-color: rgba(0, 240, 255, 0.25);">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div class="logo-symbol" style="width: 54px; height: 54px;">
+              <span class="logo-initials" style="width: 54px; height: 54px; font-size: 1.35rem;">DR</span>
+            </div>
+            <div>
+              <h3 style="color: #ffffff; font-size: 1.25rem;">DEEPAK R</h3>
+              <span class="mono-tag" style="color: var(--accent-cyan);">Java Full Stack Developer</span>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 1rem; font-size: 0.95rem; color: #cbd5e1;">
+            <div style="background: rgba(10, 14, 24, 0.6); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-glass);">
+              <span style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase;">SOFT SKILLS</span>
+              <div style="font-weight: 600; color: #ffffff; margin-top: 0.3rem;">Adaptability • Teamwork • Patience</div>
+            </div>
+
+            <div style="background: rgba(10, 14, 24, 0.6); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-glass);">
+              <span style="color: #c084fc; font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase;">LANGUAGES</span>
+              <div style="font-weight: 600; color: #ffffff; margin-top: 0.3rem;">Tamil • English</div>
+            </div>
+
+            <div style="background: rgba(10, 14, 24, 0.6); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-glass);">
+              <span style="color: #34d399; font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase;">EDUCATION</span>
+              <div style="font-weight: 700; color: #ffffff; margin-top: 0.2rem;">B.E. Computer Science (2025)</div>
+              <div style="font-size: 0.85rem; color: #94a3b8;">University College Of Engineering, Dindigul • 7.5 CGPA</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       3. TECHNICAL SKILLS MATRIX
+       ========================================================================= -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag"><i data-lucide="code"></i> Technical Skills</span>
+        <h2 class="section-title">Technical <span class="text-gradient">Skills Matrix</span></h2>
+        <p class="section-desc">Programming languages, frameworks, databases, and tools.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="tech-filter-tabs reveal-on-scroll">
+        <button class="filter-btn active" data-filter="all">All Skills</button>
+        <button class="filter-btn" data-filter="lang">Languages</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="database">Database</button>
+        <button class="filter-btn" data-filter="tools">Tools & Platforms</button>
+        <button class="filter-btn" data-filter="design">Others</button>
+      </div>
+
+      <!-- Interactive Grid of Tech Cards -->
+      <div class="tech-grid reveal-on-scroll">
+        
+        <!-- Programming Languages -->
+        <div class="tech-card" data-category="lang">
+          <div class="tech-card-icon" style="color: #f87171; background: rgba(239, 68, 68, 0.15);"><i data-lucide="terminal"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">Java</span>
+            <span class="tech-card-cat">Programming Language</span>
+          </div>
+        </div>
+
+        <div class="tech-card" data-category="lang">
+          <div class="tech-card-icon" style="color: #38bdf8; background: rgba(56, 189, 248, 0.15);"><i data-lucide="database"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">SQL</span>
+            <span class="tech-card-cat">Database Query Language</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="tech-card" data-category="frontend">
+          <div class="tech-card-icon"><i data-lucide="code-2"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">HTML</span>
+            <span class="tech-card-cat">Web Structure</span>
+          </div>
+        </div>
+
+        <div class="tech-card" data-category="frontend">
+          <div class="tech-card-icon"><i data-lucide="palette"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">CSS</span>
+            <span class="tech-card-cat">Web Styling</span>
+          </div>
+        </div>
+
+        <div class="tech-card" data-category="frontend">
+          <div class="tech-card-icon"><i data-lucide="file-code"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">JavaScript</span>
+            <span class="tech-card-cat">Frontend Programming</span>
+          </div>
+        </div>
+
+        <div class="tech-card" data-category="frontend">
+          <div class="tech-card-icon"><i data-lucide="component"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">React</span>
+            <span class="tech-card-cat">UI Library</span>
+          </div>
+        </div>
+
+        <div class="tech-card" data-category="frontend">
+          <div class="tech-card-icon"><i data-lucide="layout"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">Bootstrap</span>
+            <span class="tech-card-cat">CSS Framework</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="tech-card" data-category="backend">
+          <div class="tech-card-icon" style="color: #34d399; background: rgba(52, 211, 153, 0.15);"><i data-lucide="server"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">Spring Boot</span>
+            <span class="tech-card-cat">Java Backend Framework</span>
+          </div>
+        </div>
+
+        <div class="tech-card" data-category="backend">
+          <div class="tech-card-icon" style="color: #fbbf24; background: rgba(251, 191, 36, 0.15);"><i data-lucide="link"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">JDBC</span>
+            <span class="tech-card-cat">Java Database Connectivity</span>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="tech-card" data-category="database">
+          <div class="tech-card-icon"><i data-lucide="database"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">MySQL</span>
+            <span class="tech-card-cat">Relational Database</span>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="tech-card" data-category="tools">
+          <div class="tech-card-icon"><i data-lucide="git-branch"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">GitHub</span>
+            <span class="tech-card-cat">Version Control</span>
+          </div>
+        </div>
+
+        <div class="tech-card" data-category="tools">
+          <div class="tech-card-icon"><i data-lucide="terminal"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">VS Code & IntelliJ IDEA</span>
+            <span class="tech-card-cat">IDEs</span>
+          </div>
+        </div>
+
+        <div class="tech-card" data-category="tools">
+          <div class="tech-card-icon"><i data-lucide="send"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">Postman</span>
+            <span class="tech-card-cat">API Testing</span>
+          </div>
+        </div>
+
+        <div class="tech-card" data-category="tools">
+          <div class="tech-card-icon"><i data-lucide="cloud"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">Netlify & Render</span>
+            <span class="tech-card-cat">Deployment</span>
+          </div>
+        </div>
+
+        <!-- Others -->
+        <div class="tech-card" data-category="design">
+          <div class="tech-card-icon"><i data-lucide="figma"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">Figma</span>
+            <span class="tech-card-cat">UI Design</span>
+          </div>
+        </div>
+
+        <div class="tech-card" data-category="design">
+          <div class="tech-card-icon"><i data-lucide="image"></i></div>
+          <div class="tech-card-info">
+            <span class="tech-card-title">Canva</span>
+            <span class="tech-card-cat">Graphics Design</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       4. EXPERIENCE TIMELINE SECTION
+       ========================================================================= -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag"><i data-lucide="briefcase"></i> Work Experience</span>
+        <h2 class="section-title">Practical <span class="text-gradient">Experience</span></h2>
+        <p class="section-desc">Web development internship and full-stack industrial training.</p>
+      </div>
+
+      <div class="roadmap-container reveal-on-scroll">
+        <div class="roadmap-timeline-spine"></div>
+
+        <!-- Internship 1 -->
+        <div class="roadmap-item">
+          <div class="roadmap-node-badge">01</div>
+          <div class="roadmap-card">
+            <div class="roadmap-header">
+              <div>
+                <span class="badge badge-cyan" style="margin-bottom: 0.5rem;">Web Development Intern</span>
+                <h3 class="roadmap-month-title">CodTechIT Solutions</h3>
+              </div>
+              <span class="mono-tag" style="color: var(--accent-cyan);">July 2024 – Aug 2024</span>
+            </div>
+            <ul style="margin-top: 0.5rem; margin-left: 1.2rem; color: #cbd5e1; font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.4rem;">
+              <li>Developed responsive UI screens using HTML, CSS, and JavaScript, improving page performance by 20%.</li>
+              <li>Fixed multiple UI bugs across existing pages, reducing visual layout issues.</li>
+              <li>Collaborated with development team using Git for version control.</li>
+            </ul>
+            <div class="roadmap-tags">
+              <span class="roadmap-tag">HTML</span>
+              <span class="roadmap-tag">CSS</span>
+              <span class="roadmap-tag">JavaScript</span>
+              <span class="roadmap-tag">Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="roadmap-item">
+          <div class="roadmap-node-badge">02</div>
+          <div class="roadmap-card">
+            <div class="roadmap-header">
+              <div>
+                <span class="badge badge-violet" style="margin-bottom: 0.5rem;">Java Full Stack Course</span>
+                <h3 class="roadmap-month-title">QSpiders</h3>
+              </div>
+              <span class="mono-tag" style="color: #c084fc;">Sep 2025 – Feb 2026</span>
+            </div>
+            <ul style="margin-top: 0.5rem; margin-left: 1.2rem; color: #cbd5e1; font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.4rem;">
+              <li>Completed training in Core Java, SQL, HTML, CSS, JavaScript, and React.</li>
+              <li>Gained hands-on practice in building full stack applications.</li>
+              <li>Worked on problem-solving and coding practice through real-time exercises.</li>
+            </ul>
+            <div class="roadmap-tags">
+              <span class="roadmap-tag">Core Java</span>
+              <span class="roadmap-tag">SQL</span>
+              <span class="roadmap-tag">HTML / CSS</span>
+              <span class="roadmap-tag">JavaScript</span>
+              <span class="roadmap-tag">React</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       5. FEATURED PROJECTS SHOWCASE
+       ========================================================================= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag"><i data-lucide="layers"></i> Portfolio Projects</span>
+        <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+        <p class="section-desc">Full-stack web applications and API projects built with Java, Spring Boot, React, and MySQL.</p>
+      </div>
+
+      <div class="projects-showcase-grid">
+
+        <!-- PROJECT 1: PET PARADISE -->
+        <div class="project-deep-card reveal-on-scroll">
+          <div class="project-layout-grid">
+            <div>
+              <div class="project-meta-row">
+                <span class="badge badge-cyan">Full-Stack Web Application</span>
+                <span class="mono-tag" style="color: var(--accent-cyan);">Netlify Deployed</span>
+              </div>
+              <h3 class="project-title">Pet Paradise – Pet Buying & Selling Web Application</h3>
+              <p class="project-desc-text">
+                Built a full-stack Pet Marketplace using Java, Spring Boot, React.js, and MySQL. Enables sellers and buyers to interact with listings, dashboards, and secure CRUD operations.
+              </p>
+              
+              <ul class="project-responsibilities">
+                <li class="resp-item">
+                  <i data-lucide="check"></i>
+                  <span>Built a full-stack Pet Marketplace using Java, Spring Boot, React.js, and MySQL</span>
+                </li>
+                <li class="resp-item">
+                  <i data-lucide="check"></i>
+                  <span>Developed secure REST APIs with JWT authentication and CRUD operations</span>
+                </li>
+                <li class="resp-item">
+                  <i data-lucide="check"></i>
+                  <span>Designed a responsive React UI with seller dashboard, pet listings, and media upload support</span>
+                </li>
+              </ul>
+
+              <div class="roadmap-tags">
+                <span class="roadmap-tag">Java</span>
+                <span class="roadmap-tag">Spring Boot</span>
+                <span class="roadmap-tag">React.js</span>
+                <span class="roadmap-tag">MySQL</span>
+                <span class="roadmap-tag">JWT</span>
+                <span class="roadmap-tag">REST API</span>
+              </div>
+
+              <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://lovelypetsforu.netlify.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                  <i data-lucide="external-link"></i> Live Demo (Netlify)
+                </a>
+                <a href="https://github.com/deepakdr111/petparadise" target="_blank" rel="noopener" class="btn btn-outline-cyan btn-sm">
+                  <i data-lucide="github"></i> View GitHub Code
+                </a>
+              </div>
+            </div>
+
+            <!-- Interactive Pet Paradise Marketplace Simulator -->
+            <div class="sim-container">
+              <div class="sim-header-bar">
+                <div class="sim-label"><i data-lucide="shopping-bag"></i> PET PARADISE MARKETPLACE PREVIEW</div>
+                <span class="status-pill"><span class="pulse-dot"></span> LIVE APP</span>
+              </div>
+              
+              <div style="padding: 1rem;">
+                <div style="display: flex; gap: 0.4rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
+                  <button class="btn btn-sm btn-outline-cyan pet-demo-filter active" data-pet-cat="All" style="font-size: 0.72rem; padding: 0.2rem 0.6rem;">All Pets</button>
+                  <button class="btn btn-sm btn-outline-cyan pet-demo-filter" data-pet-cat="Dogs" style="font-size: 0.72rem; padding: 0.2rem 0.6rem;">Dogs</button>
+                  <button class="btn btn-sm btn-outline-cyan pet-demo-filter" data-pet-cat="Cats" style="font-size: 0.72rem; padding: 0.2rem 0.6rem;">Cats</button>
+                  <button class="btn btn-sm btn-outline-cyan pet-demo-filter" data-pet-cat="Birds" style="font-size: 0.72rem; padding: 0.2rem 0.6rem;">Birds</button>
+                </div>
+
+                <div id="pet-demo-container" style="display: flex; flex-direction: column; gap: 0.6rem; max-height: 250px; overflow-y: auto;">
+                  <!-- Rendered via JS -->
+                </div>
+              </div>
+
+              <div class="sim-stats-bar">
+                <div class="sim-stat-box">
+                  <div style="color: var(--text-muted);">Backend</div>
+                  <div class="sim-stat-val" style="color: var(--accent-cyan);">Spring Boot</div>
+                </div>
+                <div class="sim-stat-box">
+                  <div style="color: var(--text-muted);">Security</div>
+                  <div class="sim-stat-val" style="color: #34d399;">JWT Tokens</div>
+                </div>
+                <div class="sim-stat-box">
+                  <div style="color: var(--text-muted);">Database</div>
+                  <div class="sim-stat-val" style="color: #c084fc;">MySQL</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: WEATHER FORECAST APP -->
+        <div class="project-deep-card reveal-on-scroll">
+          <div class="project-layout-grid">
+            <div>
+              <div class="project-meta-row">
+                <span class="badge badge-emerald">Interactive Web Application</span>
+                <span class="mono-tag" style="color: #34d399;">OpenWeatherMap API</span>
+              </div>
+              <h3 class="project-title">Weather Forecast App</h3>
+              <p class="project-desc-text">
+                Built a weather application displaying real-time updates using OpenWeatherMap API with a strong focus on mobile responsiveness and efficient API calls.
+              </p>
+              
+              <ul class="project-responsibilities">
+                <li class="resp-item">
+                  <i data-lucide="check"></i>
+                  <span>Built a weather app displaying real-time updates using OpenWeatherMap API</span>
+                </li>
+                <li class="resp-item">
+                  <i data-lucide="check"></i>
+                  <span>Focused on mobile responsiveness and efficient API calls</span>
+                </li>
+              </ul>
+
+              <div class="roadmap-tags">
+                <span class="roadmap-tag">JavaScript</span>
+                <span class="roadmap-tag">HTML</span>
+                <span class="roadmap-tag">CSS</span>
+                <span class="roadmap-tag">OpenWeatherMap API</span>
+                <span class="roadmap-tag">Responsive</span>
+              </div>
+
+              <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://deepakdr111.github.io/weatherforecast/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                  <i data-lucide="external-link"></i> Live Demo
+                </a>
+                <a href="https://github.com/deepakdr111" target="_blank" rel="noopener" class="btn btn-outline-cyan btn-sm">
+                  <i data-lucide="github"></i> View GitHub Code
+                </a>
+              </div>
+            </div>
+
+            <!-- Weather Forecast Interactive Simulator Widget -->
+            <div class="sim-container">
+              <div class="sim-header-bar">
+                <div class="sim-label"><i data-lucide="cloud-sun"></i> WEATHER WIDGET LIVE DEMO</div>
+                <span class="status-pill"><span class="pulse-dot"></span> OPENWEATHER API</span>
+              </div>
+              
+              <div style="padding: 1.25rem;">
+                <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                  <input type="text" id="weather-city-input" placeholder="Enter city (e.g. Dindigul, Chennai, Bangalore)" class="portfolio-input" style="padding: 0.45rem 0.8rem; font-size: 0.85rem;" value="Dindigul">
+                  <button id="weather-search-btn" class="btn btn-primary btn-sm"><i data-lucide="search"></i></button>
+                </div>
+
+                <div style="background: rgba(10, 14, 24, 0.7); border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: 1.2rem; display: flex; align-items: center; justify-content: space-between;">
+                  <div>
+                    <div id="weather-city-name" style="font-weight: 700; color: #ffffff; font-size: 1.15rem;">Dindigul, IN</div>
+                    <div id="weather-desc" style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.15rem;">Partly Cloudy</div>
+                    <div style="display: flex; gap: 1rem; margin-top: 0.75rem; font-size: 0.78rem; color: #cbd5e1;">
+                      <span>Humidity: <strong id="weather-humidity" style="color: var(--accent-cyan);">64%</strong></span>
+                      <span>Wind: <strong id="weather-wind" style="color: #34d399;">12 km/h</strong></span>
+                    </div>
+                  </div>
+                  <div style="text-align: right;">
+                    <i data-lucide="cloud-sun" id="weather-icon" style="width: 38px; height: 38px; color: var(--accent-cyan);"></i>
+                    <div id="weather-temp" style="font-size: 1.8rem; font-weight: 800; color: #ffffff; margin-top: 0.2rem;">32°C</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sim-stats-bar">
+                <div class="sim-stat-box">
+                  <div style="color: var(--text-muted);">API Source</div>
+                  <div class="sim-stat-val" style="color: var(--accent-cyan);">OpenWeather</div>
+                </div>
+                <div class="sim-stat-box">
+                  <div style="color: var(--text-muted);">Latency</div>
+                  <div class="sim-stat-val" style="color: #34d399;">120 ms</div>
+                </div>
+                <div class="sim-stat-box">
+                  <div style="color: var(--text-muted);">Design</div>
+                  <div class="sim-stat-val" style="color: #c084fc;">Responsive</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       6. EDUCATION & CERTIFICATIONS SECTION
+       ========================================================================= -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <span class="section-tag"><i data-lucide="graduation-cap"></i> Academics</span>
+        <h2 class="section-title">Education & <span class="text-gradient">Certifications</span></h2>
+        <p class="section-desc">Degrees, school education, and professional certificates.</p>
+      </div>
+
+      <!-- Education Cards Grid -->
+      <div class="benefits-grid reveal-on-scroll" style="margin-bottom: 3rem;">
+        
+        <!-- B.E. CSE -->
+        <div class="benefit-card">
+          <div class="benefit-icon" style="background: rgba(0, 240, 255, 0.15); border-color: rgba(0, 240, 255, 0.3); color: var(--accent-cyan);">
+            <i data-lucide="graduation-cap"></i>
+          </div>
+          <span class="badge badge-cyan" style="width: fit-content;">B.E. Computer Science</span>
+          <h3 class="benefit-title" style="margin-top: -0.25rem;">University College Of Engineering, Dindigul</h3>
+          <div style="font-size: 0.9rem; color: #cbd5e1;">
+            Dindigul, India • Year: <strong>2025</strong>
+          </div>
+          <div style="margin-top: 0.5rem; background: rgba(0, 240, 255, 0.1); padding: 0.4rem 0.75rem; border-radius: var(--radius-sm); border: 1px solid rgba(0, 240, 255, 0.2); font-weight: 700; color: var(--accent-cyan); display: inline-block; width: fit-content;">
+            7.5 CGPA
+          </div>
+        </div>
+
+        <!-- 12th Senior Secondary -->
+        <div class="benefit-card">
+          <div class="benefit-icon" style="background: rgba(139, 92, 246, 0.15); border-color: rgba(139, 92, 246, 0.3); color: #c084fc;">
+            <i data-lucide="book-open"></i>
+          </div>
+          <span class="badge badge-violet" style="width: fit-content;">Senior Secondary</span>
+          <h3 class="benefit-title" style="margin-top: -0.25rem;">Sri Ragavendra Matric Hr Sec School</h3>
+          <div style="font-size: 0.9rem; color: #cbd5e1;">
+            Veeraganur, India • Year: <strong>2021</strong>
+          </div>
+          <div style="margin-top: 0.5rem; background: rgba(139, 92, 246, 0.1); padding: 0.4rem 0.75rem; border-radius: var(--radius-sm); border: 1px solid rgba(139, 92, 246, 0.2); font-weight: 700; color: #c084fc; display: inline-block; width: fit-content;">
+            86% Score
+          </div>
+        </div>
+
+        <!-- 10th Secondary -->
+        <div class="benefit-card">
+          <div class="benefit-icon" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.3); color: #34d399;">
+            <i data-lucide="award"></i>
+          </div>
+          <span class="badge badge-emerald" style="width: fit-content;">Secondary</span>
+          <h3 class="benefit-title" style="margin-top: -0.25rem;">Sri Ragavendra Matric Hr Sec School</h3>
+          <div style="font-size: 0.9rem; color: #cbd5e1;">
+            Veeraganur, India • Year: <strong>2019</strong>
+          </div>
+          <div style="margin-top: 0.5rem; background: rgba(16, 185, 129, 0.1); padding: 0.4rem 0.75rem; border-radius: var(--radius-sm); border: 1px solid rgba(16, 185, 129, 0.2); font-weight: 700; color: #34d399; display: inline-block; width: fit-content;">
+            83% Score
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certifications -->
+      <div class="reveal-on-scroll">
+        <div class="section-header text-left" style="margin-bottom: 1.5rem;">
+          <span class="section-tag violet"><i data-lucide="shield-check"></i> Certifications</span>
+          <h3 style="font-size: 1.5rem; color: #ffffff;">Certificates & Training</h3>
+        </div>
+
+        <div class="poc-grid">
+          <div class="poc-card">
+            <div>
+              <span class="badge badge-cyan" style="margin-bottom: 0.6rem;">IBM Certified</span>
+              <strong style="color: #ffffff; font-size: 1.1rem; display: block;">IBM Introduction to Web Development (HTML, CSS, JavaScript)</strong>
+            </div>
+            <span class="mono-tag" style="color: var(--accent-cyan); margin-top: 0.8rem;">IBM Certification</span>
+          </div>
+
+          <div class="poc-card">
+            <div>
+              <span class="badge badge-violet" style="margin-bottom: 0.6rem;">Internship Certificate</span>
+              <strong style="color: #ffffff; font-size: 1.1rem; display: block;">CodTechIT Solutions Internship Certificate</strong>
+            </div>
+            <span class="mono-tag" style="color: #c084fc; margin-top: 0.8rem;">Internship Certificate</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       7. CONTACT & HIRE ME SECTION
+       ========================================================================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="cta-banner-box reveal-on-scroll">
+        <span class="section-tag"><i data-lucide="mail"></i> Get In Touch</span>
+        <h2 style="font-size: clamp(2rem, 3.8vw, 3rem); margin-top: 0.5rem; margin-bottom: 0.75rem;">
+          Let's Build Something <span class="text-gradient">Great Together</span>
+        </h2>
+        <p style="font-size: 1.1rem; color: #cbd5e1; max-width: 680px; margin: 0 auto 1.5rem auto;">
+          Whether you have a job opportunity, project inquiry, or technical question, feel free to get in touch.
+        </p>
+
+        <!-- Portfolio Contact Form -->
+        <div style="max-width: 720px; margin: 0 auto; background: rgba(12, 16, 26, 0.6); padding: 1.75rem; border-radius: var(--radius-xl); border: 1px solid var(--border-glass);">
+          <form id="portfolio-contact-form">
+            <div class="portfolio-form-grid">
+              <div class="portfolio-form-group">
+                <label for="contact-name" class="portfolio-label">Your Name</label>
+                <input type="text" id="contact-name" class="portfolio-input" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="portfolio-form-group">
+                <label for="contact-email" class="portfolio-label">Email Address</label>
+                <input type="email" id="contact-email" class="portfolio-input" placeholder="john@example.com" required>
+              </div>
+
+              <div class="portfolio-form-group full-width">
+                <label for="contact-subject" class="portfolio-label">Subject</label>
+                <input type="text" id="contact-subject" class="portfolio-input" placeholder="Job Opportunity / Project Inquiry" required>
+              </div>
+
+              <div class="portfolio-form-group full-width">
+                <label for="contact-message" class="portfolio-label">Message</label>
+                <textarea id="contact-message" class="portfolio-textarea" rows="4" placeholder="Hello Deepak, I checked out your portfolio..." required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="margin-top: 1.25rem; width: 100%; justify-content: center;">
+              <span>Send Message</span>
+              <i data-lucide="send"></i>
+            </button>
+          </form>
+
+          <div id="contact-form-response" style="display: none;"></div>
+        </div>
+
+        <!-- Direct Contact Strip -->
+        <div class="contact-direct-strip">
+          <a href="mailto:deev3816@gmail.com" class="contact-link-item">
+            <i data-lucide="mail" style="color: var(--accent-cyan);"></i>
+            <span>deev3816@gmail.com</span>
+          </a>
+          <a href="tel:+918148019751" class="contact-link-item">
+            <i data-lucide="phone" style="color: var(--accent-cyan);"></i>
+            <span>+91 8148019751</span>
+          </a>
+          <a href="https://github.com/deepakdr111" target="_blank" rel="noopener" class="contact-link-item">
+            <i data-lucide="github" style="color: var(--accent-cyan);"></i>
+            <span>github.com/deepakdr111</span>
+          </a>
+          <a href="https://linkedin.com/in/indeepak-dr11" target="_blank" rel="noopener" class="contact-link-item">
+            <i data-lucide="linkedin" style="color: var(--accent-cyan);"></i>
+            <span>linkedin.com/in/indeepak-dr11</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       8. FOOTER
+       ========================================================================= -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Col -->
+        <div>
+          <a href="#hero" class="nav-logo" style="margin-bottom: 1rem;">
+            <div class="logo-symbol">
+              <span class="logo-initials">DR</span>
+            </div>
+            <div class="logo-text">
+              <span class="brand-name">DEEPAK R</span>
+              <span class="brand-sub">JAVA FULL STACK DEV</span>
+            </div>
+          </a>
+          <p style="font-size: 0.9rem; color: #94a3b8; line-height: 1.6; margin-bottom: 1.25rem;">
+            Fresher Java Full Stack Developer passionate about clean code, problem solving, and continuous learning.
+          </p>
+          <div class="badge badge-cyan">Open To Opportunities</div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Me</a></li>
+            <li><a href="#skills" class="footer-link">Skills Matrix</a></li>
+            <li><a href="#experience" class="footer-link">Experience</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
+            <li><a href="#education" class="footer-link">Education</a></li>
+          </ul>
+        </div>
+
+        <!-- Projects Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Featured Projects</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://lovelypetsforu.netlify.app/" target="_blank" rel="noopener" class="footer-link">Pet Paradise (Live)</a></li>
+            <li><a href="https://github.com/deepakdr111/petparadise" target="_blank" rel="noopener" class="footer-link"><i data-lucide="github" style="width:14px; height:14px; display:inline-block; vertical-align:middle;"></i> Pet Paradise (GitHub)</a></li>
+            <li><a href="https://deepakdr111.github.io/weatherforecast/" target="_blank" rel="noopener" class="footer-link">Weather App (Live)</a></li>
+            <li><a href="https://github.com/deepakdr111" target="_blank" rel="noopener" class="footer-link"><i data-lucide="github" style="width:14px; height:14px; display:inline-block; vertical-align:middle;"></i> Weather App (GitHub)</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect Col -->
+        <div>
+          <h4 class="footer-col-title">Contact & Socials</h4>
+          <ul class="footer-links-list">
+            <li>
+              <a href="tel:+918148019751" class="footer-link" style="display: flex; align-items: center; gap: 0.5rem;">
+                <i data-lucide="phone" style="width: 14px; height: 14px; color: var(--accent-cyan);"></i>
+                <span>+91 8148019751</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:deev3816@gmail.com" class="footer-link" style="display: flex; align-items: center; gap: 0.5rem;">
+                <i data-lucide="mail" style="width: 14px; height: 14px; color: var(--accent-cyan);"></i>
+                <span>deev3816@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/deepakdr111" target="_blank" rel="noopener" class="footer-link" style="display: flex; align-items: center; gap: 0.5rem;">
+                <i data-lucide="github" style="width: 14px; height: 14px; color: var(--accent-cyan);"></i>
+                <span>github.com/deepakdr111</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/indeepak-dr11" target="_blank" rel="noopener" class="footer-link" style="display: flex; align-items: center; gap: 0.5rem;">
+                <i data-lucide="linkedin" style="width: 14px; height: 14px; color: var(--accent-cyan);"></i>
+                <span>linkedin.com/in/indeepak-dr11</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 DEEPAK R. All rights reserved. Java Full Stack Developer.
+        </div>
+        <div>
+          Tamil Nadu, India • Java | Spring Boot | React | SQL
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/canvas-bg.js"></script>
+  <script src="js/interactive-demos.js"></script>
+  <script src="js/filter-tech.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
