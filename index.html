@@ -58,7 +58,7 @@
 
       <!-- Desktop Actions -->
       <div class="nav-actions">
-        <a href="https://drive.google.com/file/d/1VFfLu_czBDgsThjzSip6ZgcriCsE-2JC/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-outline-cyan btn-sm">
+        <a href="https://drive.google.com/file/d/1qa2dnJK9bEddQ1pEuPSUbTDwrjgfXk55/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-outline-cyan btn-sm">
           <i data-lucide="download" style="width:14px; height:14px;"></i> Download Resume
         </a>
         <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
@@ -100,7 +100,7 @@
       </ul>
     </div>
     <div class="mobile-drawer-footer">
-      <a href="https://drive.google.com/file/d/1VFfLu_czBDgsThjzSip6ZgcriCsE-2JC/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; justify-content: center;">
+      <a href="https://drive.google.com/file/d/1qa2dnJK9bEddQ1pEuPSUbTDwrjgfXk55/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; justify-content: center;">
         <i data-lucide="download"></i> Download Resume
       </a>
     </div>
@@ -157,23 +157,21 @@
           </div>
         </div>
 
-        <!-- Action CTAs -->
+        <!-- Action CTAs: Inline Buttons with GitHub and LinkedIn PNG Logos -->
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary btn-lg">
             <span>View Projects</span>
             <i data-lucide="arrow-right"></i>
           </a>
-          <a href="https://drive.google.com/file/d/1VFfLu_czBDgsThjzSip6ZgcriCsE-2JC/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+          <a href="https://drive.google.com/file/d/1qa2dnJK9bEddQ1pEuPSUbTDwrjgfXk55/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
             <span>Download Resume</span>
             <i data-lucide="download"></i>
           </a>
-          <a href="https://github.com/deepakdr111" target="_blank" rel="noopener" class="btn btn-outline-cyan btn-lg" style="padding: 0.8rem 1.1rem; display: flex; align-items: center; gap: 0.4rem;" title="GitHub Profile">
-            <i data-lucide="github"></i>
-            <span style="font-size: 0.88rem;">GitHub</span>
+          <a href="https://github.com/deepakdr111" target="_blank" rel="noopener" class="btn-social-icon" title="GitHub Profile" aria-label="GitHub Profile">
+            <img src="assets/images/github.png" alt="GitHub Logo">
           </a>
-          <a href="https://linkedin.com/in/indeepak-dr11" target="_blank" rel="noopener" class="btn btn-outline-cyan btn-lg" style="padding: 0.8rem 1.1rem; display: flex; align-items: center; gap: 0.4rem;" title="LinkedIn Profile">
-            <i data-lucide="linkedin"></i>
-            <span style="font-size: 0.88rem;">LinkedIn</span>
+          <a href="https://linkedin.com/in/indeepak-dr11" target="_blank" rel="noopener" class="btn-social-icon" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+            <img src="assets/images/linkedin.png" alt="LinkedIn Logo">
           </a>
         </div>
       </div>
@@ -182,7 +180,7 @@
       <div class="hero-profile-wrapper reveal-on-scroll">
         <div class="profile-card-stage">
           <div class="profile-img-container">
-            <img src="assets/images/profile3.png" alt="DEEPAK R - Java Full Stack Developer" class="hero-profile-img" onerror="this.src='assets/images/profile.png'">
+            <img src="assets/images/profile3.png" alt="DEEPAK R - Java Full Stack Developer" class="hero-profile-img" onerror="this.src='assets/images/profile_user.png'">
           </div>
           <div class="profile-card-badge">
             <span class="profile-badge-name">DEEPAK R</span>
@@ -414,10 +412,18 @@
 
         <!-- Others -->
         <div class="tech-card" data-category="design">
-          <div class="tech-card-icon"><i data-lucide="figma"></i></div>
+          <div class="tech-card-icon" style="color: #a855f7; background: rgba(168, 85, 247, 0.15);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/>
+              <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/>
+              <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/>
+              <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/>
+              <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/>
+            </svg>
+          </div>
           <div class="tech-card-info">
             <span class="tech-card-title">Figma</span>
-            <span class="tech-card-cat">UI Design</span>
+            <span class="tech-card-cat">UI & Prototype Design</span>
           </div>
         </div>
 
@@ -505,14 +511,14 @@
 
 
   <!-- =========================================================================
-       5. FEATURED PROJECTS SHOWCASE
+       5. FEATURED LIVE PROJECTS SHOWCASE (PET PARADISE, CAFE STALL, WEATHER FORECAST)
        ========================================================================= -->
   <section class="section" id="projects">
     <div class="container">
       <div class="section-header reveal-on-scroll">
-        <span class="section-tag"><i data-lucide="layers"></i> Portfolio Projects</span>
-        <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
-        <p class="section-desc">Full-stack web applications and API projects built with Java, Spring Boot, React, and MySQL.</p>
+        <span class="section-tag"><i data-lucide="layers"></i> Live Projects</span>
+        <h2 class="section-title">Featured <span class="text-gradient">Live Projects</span></h2>
+        <p class="section-desc">Key deployed live applications with direct GitHub repositories.</p>
       </div>
 
       <div class="projects-showcase-grid">
@@ -602,7 +608,112 @@
           </div>
         </div>
 
-        <!-- PROJECT 2: WEATHER FORECAST APP -->
+        <!-- PROJECT 2: CAFE STALL WEB APPLICATION -->
+        <div class="project-deep-card reveal-on-scroll">
+          <div class="project-layout-grid">
+            <div>
+              <div class="project-meta-row">
+                <span class="badge badge-amber">Interactive Cafe Web App</span>
+                <span class="mono-tag" style="color: #fbbf24;">GitHub Pages Live</span>
+              </div>
+              <h3 class="project-title">Cafe Stall – Modern Coffee & Beverage Web Application</h3>
+              <p class="project-desc-text">
+                Designed and built a responsive coffee shop & cafe ordering web application featuring interactive beverage customization, dynamic cart calculations, and modern dark aesthetics.
+              </p>
+              
+              <ul class="project-responsibilities">
+                <li class="resp-item">
+                  <i data-lucide="check"></i>
+                  <span>Built a responsive cafe web application with interactive coffee brew selection and pricing</span>
+                </li>
+                <li class="resp-item">
+                  <i data-lucide="check"></i>
+                  <span>Implemented dynamic shopping cart calculations and real-time order feedback using vanilla JavaScript</span>
+                </li>
+                <li class="resp-item">
+                  <i data-lucide="check"></i>
+                  <span>Deployed live on GitHub Pages with clean component structure and high performance</span>
+                </li>
+              </ul>
+
+              <div class="roadmap-tags">
+                <span class="roadmap-tag">JavaScript</span>
+                <span class="roadmap-tag">HTML5</span>
+                <span class="roadmap-tag">CSS3</span>
+                <span class="roadmap-tag">Flexbox & Grid</span>
+                <span class="roadmap-tag">GitHub Pages</span>
+              </div>
+
+              <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://deepakdr111.github.io/cafestall/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                  <i data-lucide="external-link"></i> Live Demo (GitHub Pages)
+                </a>
+                <a href="https://github.com/deepakdr111/cafestall" target="_blank" rel="noopener" class="btn btn-outline-cyan btn-sm">
+                  <i data-lucide="github"></i> View GitHub Code
+                </a>
+              </div>
+            </div>
+
+            <!-- Interactive Cafe Stall Order Simulator Widget -->
+            <div class="sim-container">
+              <div class="sim-header-bar">
+                <div class="sim-label"><i data-lucide="coffee"></i> CAFE BREW ORDER WIDGET</div>
+                <span class="status-pill"><span class="pulse-dot"></span> LIVE APP</span>
+              </div>
+              
+              <div style="padding: 1.25rem;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem;">
+                  <div>
+                    <label style="font-size: 0.75rem; color: #94a3b8; display: block; margin-bottom: 0.3rem;">Select Coffee Brew</label>
+                    <select id="cafe-coffee-select" class="portfolio-input" style="padding: 0.45rem 0.6rem; font-size: 0.85rem;">
+                      <option value="espresso">Signature Espresso (₹120)</option>
+                      <option value="cappuccino">Velvet Cappuccino (₹160)</option>
+                      <option value="latte" selected>Hazelnut Latte (₹180)</option>
+                      <option value="coldbrew">Nitro Cold Brew (₹200)</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label style="font-size: 0.75rem; color: #94a3b8; display: block; margin-bottom: 0.3rem;">Cup Size</label>
+                    <select id="cafe-size-select" class="portfolio-input" style="padding: 0.45rem 0.6rem; font-size: 0.85rem;">
+                      <option value="small">Small (Regular)</option>
+                      <option value="medium" selected>Medium (+25%)</option>
+                      <option value="large">Large (+50%)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div style="background: rgba(10, 14, 24, 0.7); border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: 1rem; display: flex; align-items: center; justify-content: space-between;">
+                  <div>
+                    <div style="font-size: 0.82rem; color: #94a3b8;">Total Order Price</div>
+                    <div id="cafe-cart-total" style="font-size: 1.6rem; font-weight: 800; color: #fbbf24;">₹225</div>
+                  </div>
+                  <button id="cafe-order-btn" class="btn btn-primary btn-sm" style="padding: 0.5rem 1rem;">
+                    <i data-lucide="shopping-bag"></i> Order Brew
+                  </button>
+                </div>
+
+                <div id="cafe-status-msg" style="display: none; margin-top: 0.75rem; padding: 0.5rem; background: rgba(52, 211, 153, 0.1); border: 1px solid rgba(52, 211, 153, 0.3); border-radius: var(--radius-sm); font-size: 0.82rem; text-align: center;"></div>
+              </div>
+
+              <div class="sim-stats-bar">
+                <div class="sim-stat-box">
+                  <div style="color: var(--text-muted);">Deployment</div>
+                  <div class="sim-stat-val" style="color: #fbbf24;">GitHub Pages</div>
+                </div>
+                <div class="sim-stat-box">
+                  <div style="color: var(--text-muted);">Stack</div>
+                  <div class="sim-stat-val" style="color: var(--accent-cyan);">JS + HTML5</div>
+                </div>
+                <div class="sim-stat-box">
+                  <div style="color: var(--text-muted);">UX Rating</div>
+                  <div class="sim-stat-val" style="color: #34d399;">5.0 / 5</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: WEATHER FORECAST APP (3RD FEATURED PROJECT) -->
         <div class="project-deep-card reveal-on-scroll">
           <div class="project-layout-grid">
             <div>
@@ -638,7 +749,7 @@
                 <a href="https://deepakdr111.github.io/weatherforecast/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
                   <i data-lucide="external-link"></i> Live Demo
                 </a>
-                <a href="https://github.com/deepakdr111" target="_blank" rel="noopener" class="btn btn-outline-cyan btn-sm">
+                <a href="https://github.com/deepakdr111/weatherforecast" target="_blank" rel="noopener" class="btn btn-outline-cyan btn-sm">
                   <i data-lucide="github"></i> View GitHub Code
                 </a>
               </div>
@@ -692,6 +803,23 @@
         </div>
 
       </div>
+
+      <!-- OTHER REPOSITORIES ACCESS SECTION BELOW PROJECTS -->
+      <div style="margin-top: 2.5rem;" class="reveal-on-scroll">
+        <div style="background: rgba(12, 16, 26, 0.75); border: 1px solid var(--border-glass); border-radius: var(--radius-xl); padding: 1.75rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <span class="mono-tag" style="color: var(--accent-cyan);">SOURCE CODE & REPOSITORIES ACCESS</span>
+              <h3 style="font-size: 1.35rem; color: #ffffff; margin-top: 0.25rem;">Explore All Other Code Repositories on GitHub</h3>
+              <p style="font-size: 0.9rem; color: #94a3b8; margin-top: 0.25rem;">Browse project source codes, Java full-stack modules, and GitHub commits.</p>
+            </div>
+            <a href="https://github.com/deepakdr111?tab=repositories" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+              <i data-lucide="github"></i> Access All GitHub Repos
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -896,14 +1024,18 @@
           </ul>
         </div>
 
-        <!-- Projects Quick Links -->
+        <!-- Live Projects Links Only -->
         <div>
-          <h4 class="footer-col-title">Featured Projects</h4>
+          <h4 class="footer-col-title">Live Projects</h4>
           <ul class="footer-links-list">
             <li><a href="https://lovelypetsforu.netlify.app/" target="_blank" rel="noopener" class="footer-link">Pet Paradise (Live)</a></li>
-            <li><a href="https://github.com/deepakdr111/petparadise" target="_blank" rel="noopener" class="footer-link"><i data-lucide="github" style="width:14px; height:14px; display:inline-block; vertical-align:middle;"></i> Pet Paradise (GitHub)</a></li>
+            <li><a href="https://deepakdr111.github.io/cafestall/" target="_blank" rel="noopener" class="footer-link">Cafe Stall (Live)</a></li>
             <li><a href="https://deepakdr111.github.io/weatherforecast/" target="_blank" rel="noopener" class="footer-link">Weather App (Live)</a></li>
-            <li><a href="https://github.com/deepakdr111" target="_blank" rel="noopener" class="footer-link"><i data-lucide="github" style="width:14px; height:14px; display:inline-block; vertical-align:middle;"></i> Weather App (GitHub)</a></li>
+            <li>
+              <a href="https://github.com/deepakdr111?tab=repositories" target="_blank" rel="noopener" class="footer-link" style="color: var(--accent-cyan); font-weight: 600; margin-top: 0.6rem; display: flex; align-items: center; gap: 0.4rem;">
+                <i data-lucide="git-branch" style="width: 14px; height: 14px;"></i> Other Repositories
+              </a>
+            </li>
           </ul>
         </div>
 

@@ -118,4 +118,57 @@
     });
   }
 
+  // -------------------------------------------------------------------------
+  // 3. CAFE STALL INTERACTIVE BREW SIMULATOR
+  // -------------------------------------------------------------------------
+  const cafeOrderBtn = document.getElementById('cafe-order-btn');
+  const cafeCoffeeSelect = document.getElementById('cafe-coffee-select');
+  const cafeSizeSelect = document.getElementById('cafe-size-select');
+  const cafeCartTotal = document.getElementById('cafe-cart-total');
+  const cafeStatusMsg = document.getElementById('cafe-status-msg');
+
+  if (cafeCoffeeSelect && cafeSizeSelect && cafeCartTotal) {
+    const prices = {
+      'espresso': { base: 120, name: 'Signature Espresso' },
+      'cappuccino': { base: 160, name: 'Velvet Cappuccino' },
+      'latte': { base: 180, name: 'Hazelnut Latte' },
+      'coldbrew': { base: 200, name: 'Nitro Cold Brew' }
+    };
+
+    const sizeMultipliers = {
+      'small': 1.0,
+      'medium': 1.25,
+      'large': 1.5
+    };
+
+    function calculateCafeTotal() {
+      const coffeeKey = cafeCoffeeSelect.value;
+      const sizeKey = cafeSizeSelect.value;
+      const coffee = prices[coffeeKey] || prices['espresso'];
+      const multiplier = sizeMultipliers[sizeKey] || 1.0;
+      const total = Math.round(coffee.base * multiplier);
+
+      if (cafeCartTotal) {
+        cafeCartTotal.textContent = `₹${total}`;
+      }
+    }
+
+    cafeCoffeeSelect.addEventListener('change', calculateCafeTotal);
+    cafeSizeSelect.addEventListener('change', calculateCafeTotal);
+
+    if (cafeOrderBtn && cafeStatusMsg) {
+      cafeOrderBtn.addEventListener('click', () => {
+        const coffee = prices[cafeCoffeeSelect.value].name;
+        cafeStatusMsg.style.display = 'block';
+        cafeStatusMsg.innerHTML = `<span style="color: #34d399;">✓ Order Placed!</span> Brewing ${coffee} (${cafeSizeSelect.value.toUpperCase()})...`;
+        setTimeout(() => {
+          cafeStatusMsg.style.display = 'none';
+        }, 4000);
+      });
+    }
+
+    calculateCafeTotal();
+  }
+
 })();
+
